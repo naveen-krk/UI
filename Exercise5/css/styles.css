@@ -42,12 +42,12 @@ h2 {
   font-weight: 500;
   font-size: large;
 }
-.floatleft {
+.left-class {
   float: left;
   width: 60.5%;
   margin-bottom: 20px;
 }
-.floatright {
+.right-class {
   float: right;
   width: 38%;
   margin-bottom: 20px;
