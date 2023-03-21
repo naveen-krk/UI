@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/background-image.png");
+    background-size:cover;
+}
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background-color: rgba(0, 0, 0 ,0.25);
+}
+/* Start of nav */
+nav {
+    position: fixed;
+    height: 90px;
+    width: 90px;
+    border: 1px solid #000;
+    background-color: #000;
+    top: 43px;
+}
+
+nav i {
+    color: #fff;
+    transform: scaleX(1.5); 
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+/* End of nav */
+/* Start of List */
+i:hover + .list {
+    left: -10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.list {
+    position:relative;
+    background-color: #000;
+    text-align: center;
+    width: 260px;
+    height: 827px;
+    top: 28px;
+    left: -300px;
+    border-radius: 15px;
+    line-height: 50px;
+    transition: left 2s;
+}
+
+.list:hover {
+    left: -10%;
+}
+
+nav .list ul img {
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+a:hover {
+    color:#7fffd4;
+}
+/* End of List */
+
+.fancy-hats h1 {
+    position: absolute;
+    color: white;
+    font-size: 84px;
+    font-weight: 400px;
+    left: 42%;
+    top: 52px;
+}
+/* Start of Fanzy hats */
+span {
+    font-size: 120px;
+    letter-spacing: 5px;
+}
+
+.fancy-hats h4 {
+    position: absolute;
+    position: fixed;
+    font-size: 40px;
+    color: white;
+    transform: rotate(270deg);
+    right: -110px;
+    top: 180px;
+    text-align: center;
+}
+
+.hats-bottom p{
+    position: absolute;
+    font-size: 105px;
+    color: #ffffff;
+    letter-spacing: 6px;
+    font-weight: 700;
+    top: 690px;
+    left: 30.5%;
+}
+
+.hats-bottom span {
+    line-height: 0.9;
+    font-size: 152px;
+    letter-spacing: 2px;
+}
+/* End of fanzy hats */
+/* Start of footer */
+.footer{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+.footer i {
+    color: #fefefe;
+    font-size: 36px;
+    margin-right: 20px;
+}
+/* End of Footer */
