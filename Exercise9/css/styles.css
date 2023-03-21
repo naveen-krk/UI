@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  width: 100%;
+}
+.earth,
+.astroid {
+  display: inline-block;
+}
+.earth img {
+  width: 800px;
+  position: absolute;
+  left: 40px;
+  animation: rotation 20s infinite linear;
+}
+.astroid img {
+  width: 20%;
+  background-size: cover;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: rotate(120deg);
+  animation:astroid 10s linear ;
+}
+@keyframes astroid {
+  0% {
+    width: 250px;
+  }
+  25% {
+    width: 500px;
+  }
+  50% {
+    width: 750px;
+  }
+  75% {
+    width: 1000px;
+  }
+  100% {
+    width: 2000px;
+    display: none;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
