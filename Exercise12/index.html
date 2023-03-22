@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Math Kids</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Start of the Header  -->
+    <header >
+        <div class="header">
+        <h1> MATH KIDS</h1><h2>KIDS LEARNING APP</h2>
+    </div>
+    <!-- End of the Header  -->
+    </header>
+    <!-- Start of container -->
+    <div class="container">
+        <div class="shape">
+            <div class="container-text">1.Choose a Shape</div>
+            <div id="shape-container">
+            <div id="circle" onclick="displayNext('circle');"><i class="fa-solid fa-check"  id="tick"></i></div>
+            <div id="triangle" onclick="displayNext('triangle');"><i class="fa-solid fa-check"  id="tick"></i></div>
+            <div id="square" onclick="displayNext('square');"><i class="fa-solid fa-check"  id="tick"></i></div>
+            </div>
+            <button id="nextbutton" onclick="openCalculate()">NEXT</button>
+        </div>
+        <div class="calculate">
+            <div id="container-value"></div>
+            <input id="value">
+            <button id="calculate" onclick="calculate()">CALCULATE</button>
+        </div>
+        <div class="result">
+            <div id="resultShape"></div>
+        <p id="shapeName"></p>
+        <div class="result-table">
+            <span id="content"></span>
+            <span id="variable"></span>
+            <span id="val"></span>
+        </div>
+        <div class="result-table">
+            <span id="content">AREA</span>
+            <span id="areaFormula"></span>
+            <span id="area"></span>
+        </div>
+        <div class="result-table">
+            <span id="content">PERIMETER</span>
+            <span id="perimeterFormula"></span>
+            <span id="perimeter"></span>
+        </div>
+        <button class="start-again" onclick="window.location.reload()">START AGAIN</button>
+        </div>
+        <!-- End of container -->
+    </div>
+</body>
+<script src="./js/math.js">
+</script>
+</html>
