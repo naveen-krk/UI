@@ -110,8 +110,8 @@ section{
 }
 .size{
     position: absolute;
-    left: 80%;
-    top: 70%;
+    right:5%;
+    top: 69%;
     font-size: 22px;
     background-color: #90b085;
     color: #000000;
