@@ -33,20 +33,18 @@ body{
     background-color: #4d66b4;
      padding: 5px;
 }
-.logo{
-    width: 17%; 
-    padding: 10px;
-}
 .info{
     padding-top: 25px;
-    
+    margin-left: -15px;
 }
-.info div{
+.name{
     font-size: 20px;
     width: 100%;
-    color: #fff;
+    color: white;
+    font-weight: 700;
 }
-.mail div{
+.mail {
+    margin-top: 5px;
     font-size: 15px;
 }
 div {
@@ -60,7 +58,9 @@ div {
     font-weight: 300;
 }
  img{
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    padding: 2px;
+    margin: 10px;
 }
