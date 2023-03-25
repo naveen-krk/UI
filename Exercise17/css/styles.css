@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: #f5f5f5;
+}
+/* start of container */
+.container{
+    width: 36%;
+    margin: auto;
+    /* end of container */
+}
+/* start of sirius */
+.sirius{
+    width: 30%;
+    margin: auto;
+    padding: 30px 0;
+}
+/* end of sirius */
+/* start of tabs */
+#tabs{
+    margin-top: 30px;
+    background-color: white;
+    height: 600px;
+    border: none;
+    padding: 0;
+}
+#tabs ul{
+    font-size: 12px;
+border: none;
+padding: 0 10px;
+}
+#tabs li{
+    margin-left: 10px;
+    color: white;
+    font-weight: 700;
+}
+#tabs-1 p{
+    margin-top: 15px;
+}
+.ui-tabs .ui-tabs-nav{
+    background-color: #f5f5f5;
+   border: none;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+    background-color: black;
+    color: white;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor{
+    background-color: #001c72;
+}
+
+/* end of tabs */
+/* start of about-us */
+.details{
+    font-size: 13px;
+    line-height: 20px;
+}
+.image{
+    margin-top: 25px;
+}
+/* end of about-us */
+/* start of the solutions */
+ .ui-accordion-content-active{
+   height: 200px;
+ }
+ #tabs-2{
+    font-size: 12px;
+    font-weight: 100;
+ }
+ #tabs-2 h3{
+    font-size: 12px;
+    background-color: #818dba;
+    color: white;
+ }
+
+/* end of the solutions */
+/* start of locations */
+#tabs-3
+{
+    overflow-y: scroll;
+  height: 550px;
+}
+.table
+{
+    margin: auto;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    border-spacing: 0px 5px;
+}
+.table tr
+{
+    height: 40px;
+}
+
+#tabs-3 .image{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.row:nth-child(even)
+{background-color:#f2d9f7;
+   
+}
+.row:nth-child(odd)
+{background-color:#eeeeee;
+}
+/* end of locations */
