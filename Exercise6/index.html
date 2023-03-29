@@ -1,154 +1,95 @@
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <title>Fashion Products</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type="text/css" href='./css/styles.css'>
-    </head>
-    <body>
-        <header class="header">
-            <img class="logo" src="./images/logo.png" alt="logo" />
-            <div class="container">
-                <div class="icon"></div>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">My Orders</a></li>
-                    <li><a href="#">My Wish List</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="row">
-            <section>
-                <div class="product">
-                    <img src="images/shirt.png" alt="shirt" />
-                </div>
-                <span class="material-symbols-outlined">
-                    star
-                </span>
-                <div class="size">S</div>
-                <div class="product-desc">
-                    <div class="product-title">Bath Wardrobe</div>
-                    <div class="cost">₹ 850</div>
-                    <div class="add-to-cart"><button>ADD TO CART</button>
-                    </div>
-            </section>
-            <section>
-                <div class="product">
-                    <img src="./images/jacket.png" alt="jacket" />
-                </div>
-                <span class="material-symbols-outlined">
-                    star
-                </span>
-                <div class="size">M</div>
-                <div class="product-desc">
-                    <div class="product-title">Winter Jacket</div>
-                    <div class="cost">₹ 2399</div>
-                    <div class="add-to-cart"><button>ADD TO CART</button>
-                    </div>
-            </section>
-            <section>
-                <div class="product">
-                    <img src="images/tshirt.png" alt="tshirt" />
-                </div>
-                <span class="material-symbols-outlined">
-                    star
-                </span>
-                <div class="size">S</div>
-                <div class="product-desc">
-                    <div class="product-title">Red Round Neck</div>
-                    <div class="cost">₹ 350</div>
-                    <div class="add-to-cart"><button>ADD TO CART</button>
-                    </div>
-            </section>
-            <section>
-                <div class="product">
-                    <img src="images/sweatshirt.png" alt="sweatshirt" />
-                </div>
-                <span class="material-symbols-outlined">
-                    star
-                </span>
-                <div class="size">S</div>
-                <div class="product-desc">
-                    <div class="product-title">Sweat Shirt</div>
-                    <div class="cost">₹ 1350</div>
-                    <div class="add-to-cart"><button>ADD TO CART</button>
-                    </div>
-            </section>
-            <section>
-                <div class="product">
-                    <img src="./images/shirt.png" alt="shirt" />
-                </div>
-                <span class="material-symbols-outlined">
-                    star
-                </span>
-                <div class="size">S</div>
-                <div class="product-desc">
-                    <div class="product-title">Bath Wardrobe</div>
-                    <div class="cost">₹ 850</div>
-                    <div class="add-to-cart"><button>ADD TO CART</button>
-                    </div>
-            </section>
-            <section>
-                <div class="product">
-                    <img src="./images/jacket.png">
-                </div>
-                <span class="material-symbols-outlined">
-                    star
-                </span>
-                <div class="size">M</div>
-                <div class="product-desc">
-                    <div class="product-title">Winter Jacket</div>
-                    <div class="cost">₹ 2399</div>
-                    <div class="add-to-cart"><button>ADD TO CART</button>
-                    </div>
-            </section>
-            <section>
-                <div class="product">
-                    <img src="./images/tshirt.png">
-                </div>
-                <span class="material-symbols-outlined">
-                    star
-                </span>
-                <div class="size">S</div>
-                <div class="product-desc">
-                    <div class="product-title">Red Round Neck</div>
-                    <div class="cost">₹ 350</div>
-                    <div class="add-to-cart"><button>ADD TO CART</button>
-                    </div>
-            </section>
-            <section>
-                <div class="product">
-                    <img src="./images/sweatshirt.png" alt="sweatshirt" />
-                </div>
-                <span class="material-symbols-outlined">
-                    star
-                </span>
-                <div class="size">S</div>
-                <div class="product-desc">
-                    <div class="product-title">Sweat Shirt</div>
-                    <div class="cost">₹ 1350</div>
-                    <div class="add-to-cart"><button>ADD TO CART</button>
-                    </div>
-            </section>
-        </div>
-        <footer>
-            <div class="footers">
-            <span ><a href="#">Jackets</a></span>
-            <span ><a href="#">Shirts</a></span>
-            <span ><a href="#">Trousers</a></span>
-            <span><a href="#">Pants</a></span>
-            <span ><a href="#">Shoes</a></span>
-            </div>
-        </footer>
-    </body>
-
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js closure</title>
+  </head>
+  <body></body>
+  <script>
+    accountDetails = {
+      123456: {
+        accno: 123456,
+        cardno: 912345600,
+        pin: 9876,
+        accbalance: 10000,
+      },
+      223456: {
+        accno: 223456,
+        cardno: 922345600,
+        pin: 4876,
+        accbalance: 15000,
+      },
+      323456: {
+        accno: 323456,
+        cardno: 932345600,
+        pin: 9176,
+        accbalance: 18000,
+      },
+      423456: {
+        accno: 423456,
+        cardno: 942345600,
+        pin: 8876,
+        accbalance: 20000,
+      },
+      523456: {
+        accno: 523456,
+        cardno: 952345600,
+        pin: 1276,
+        accbalance: 25000,
+      },
+    };
+    function transaction(cardnumber, pin, amount, choice) {
+      function validate(cardnum, pinnum, amount) {
+        for (var key in accountDetails) {
+          if (accountDetails[key].cardno == cardnum) {
+            if (accountDetails[key].pin == pinnum) {
+              if (amount <= accountDetails[key].accbalance) {
+                return key;
+              }
+            } else {
+              window.alert("wrong pin");
+              return 0;
+            }
+          }
+        }
+      }
+      choice == 1
+        ? withDraw(cardnumber, pin, amount)
+        : deposit(cardnumber, pin, amount);
+      function withDraw(cardnumber, pin, amount) {
+        let key=validate(cardnumber, pin, amount);
+        if (key!=0) {
+          accountDetails[key].accbalance =
+            accountDetails[key].accbalance + amount;
+          window.alert("available balance:" - accountDetails[key].accbalance);
+        }
+      }
+      function deposit(cardnumber, pin, amount) {
+        let key=validate(cardnumber, pin, amount);
+        if (key!=0) {
+          accountDetails[key].accbalance =
+            accountDetails[key].accbalance + amount;
+          window.alert("available balance:" + accountDetails[key].accbalance);
+        }
+      }
+    }
+    let i = 1;
+    while (i == 1) {
+      var choice = parseInt(
+        window.prompt("Choose one of the following:1.Withdraw,2.Deposit")
+      );
+      cardnumber = parseInt(window.prompt("Enter the card number"));
+      pin = parseInt(window.prompt("Enter the pin"));
+      amount = parseInt(window.prompt("Enter the amount"));
+      transaction(cardnumber, pin, amount, choice);
+      i = parseInt(
+        window.prompt("Do u want to continue the transaction? 1.yes 2.no")
+      );
+      if (i != 1) {
+        console.clear();
+      }
+    }
+  </script>
+</html>
