@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js closure</title>
+  </head>
+  <body></body>
+  <script>
+    accountDetails = {
+      123456: {
+        accno: 123456,
+        cardno: 912345600,
+        pin: 9876,
+        accbalance: 10000,
+      },
+      223456: {
+        accno: 223456,
+        cardno: 922345600,
+        pin: 4876,
+        accbalance: 15000,
+      },
+      323456: {
+        accno: 323456,
+        cardno: 932345600,
+        pin: 9176,
+        accbalance: 18000,
+      },
+      423456: {
+        accno: 423456,
+        cardno: 942345600,
+        pin: 8876,
+        accbalance: 20000,
+      },
+      523456: {
+        accno: 523456,
+        cardno: 952345600,
+        pin: 1276,
+        accbalance: 25000,
+      },
+    };
+    function transaction(cardnumber, pin, amount, choice) {
+      function validate(cardnum, pinnum, amount) {
+        for (var key in accountDetails) {
+          if (accountDetails[key].cardno == cardnum) {
+            if (accountDetails[key].pin == pinnum) {
+              if (amount <= accountDetails[key].accbalance) {
+                return key;
+              }
+            } else {
+              window.alert("wrong pin");
+              return 0;
+            }
+          }
+        }
+      }
+      choice == 1
+        ? withDraw(cardnumber, pin, amount)
+        : deposit(cardnumber, pin, amount);
+      function withDraw(cardnumber, pin, amount) {
+        let key=validate(cardnumber, pin, amount);
+        if (key!=0) {
+          accountDetails[key].accbalance =
+            accountDetails[key].accbalance + amount;
+          window.alert("available balance:" - accountDetails[key].accbalance);
+        }
+      }
+      function deposit(cardnumber, pin, amount) {
+        let key=validate(cardnumber, pin, amount);
+        if (key!=0) {
+          accountDetails[key].accbalance =
+            accountDetails[key].accbalance + amount;
+          window.alert("available balance:" + accountDetails[key].accbalance);
+        }
+      }
+    }
+    let i = 1;
+    while (i == 1) {
+      var choice = parseInt(
+        window.prompt("Choose one of the following:1.Withdraw,2.Deposit")
+      );
+      cardnumber = parseInt(window.prompt("Enter the card number"));
+      pin = parseInt(window.prompt("Enter the pin"));
+      amount = parseInt(window.prompt("Enter the amount"));
+      transaction(cardnumber, pin, amount, choice);
+      i = parseInt(
+        window.prompt("Do u want to continue the transaction? 1.yes 2.no")
+      );
+      if (i != 1) {
+        console.clear();
+      }
+    }
+  </script>
+</html>
