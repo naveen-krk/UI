@@ -1,9 +1,10 @@
-$color_1: #ffffff;
-$color_2: #cecece;
-$color_3: #5b8fde;
-$color_4: #c2e891;
-$font-family_1: 'Roboto', sans-serif;
-$background-color_1: #000000;
+@mixin important-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+  }
+  @import "colors";
 /* start of header */
 /* end of header */
 /* start of products */
@@ -69,10 +70,7 @@ h1 {
 	}
 }
 .logos {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	@include important-text;
 	margin-bottom: 8.2%;
 	margin-bottom: 6%;
 	img {
@@ -83,10 +81,7 @@ h1 {
 	}
 }
 .socialmedia {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	@include important-text;
 	margin-bottom: 8.2%;
 	margin-top: 5%;
 	margin-bottom: 5%;
@@ -115,10 +110,7 @@ footer {
 	color: $color_1;
 }
 .line {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	@include important-text;
 }
 hr {
 	&:first-child {
