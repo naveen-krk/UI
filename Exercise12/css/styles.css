@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.header{
+    background-color: rgb(170,225, 135);
+    height: 75px;
+    font-size: 10px;
+font-weight: 800;
+color: black;
+}
+.header h1{
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    left: 30px;
+}
+.header h2{
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    right: 30px;
+}
+
+.container{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.calculate{
+display: none;
+position: relative;
+}
+#value {
+    position: absolute;
+    color: white;
+    padding: 24px 190px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: black;
+    border: 2px solid white;
+    top: 407px;
+    left: -300px;
+}
+#calculate{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid white;
+    top: 550px;
+    left: -100px;
+}
+#container-value{
+    font-weight: 300;
+    font-size: 60px;
+    position: absolute;
+    top: 300px;
+width: 800px;
+left: -277px;
+}
+.result{
+    display: none;
+    width: 100%;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    flex-direction: column;   
+}
+.shape{
+    position: relative;
+    top: 250px;
+}
+#shape-container{
+    display: flex;
+    flex-wrap: wrap;
+   gap: 75px;
+}
+ #tick{
+    display: none;
+    position: relative;
+    top: 70px;
+    left: 67px;
+    transform: scale(5,5);
+}
+#triangle #tick {
+    top: 77px;
+    left: -12px;
+    transform: scale(5,5);
+} 
+#nextbutton {
+    display: none;
+     position: absolute;
+     background-color: black;
+     color: white;
+     padding: 12px 80px;
+     text-align: center;
+     font-size: 24px;
+     margin: 80px 180px;
+     cursor: pointer;
+     border: 2px solid white;
+     font-weight: 700;
+ }
+.container-text{
+    font-size: 50px;
+    margin-bottom: 90px;
+    padding-left: 90px;
+    font-weight: 400;
+}
+#circle {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(0, 152, 124);
+    border-radius: 50%;
+  }
+  #triangle {
+	width: 0;
+	height: 0;
+	border-left:75px solid transparent;
+	border-right:75px solid transparent;
+	border-bottom: 150px solid rgb(255, 171, 220);
+}
+#square {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(224, 224, 224);
+  }
+  #resultShape{  
+    height: 160px;
+    width: 10px;
+
+}
+  #shapeName{
+    margin-bottom: 19px;
+    font-size: 50px;
+ }
+  .row-1{
+    padding: 25px 302px;
+    background-color: rgb(73, 110, 232);
+}
+.result-table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20PX;
+   
+}
+.result-table span {
+    display: inline-flex;
+    padding-left: 15px;
+    align-items: center;
+    
+}
+#content{
+    width: 15%;
+    height: 45px;
+    background-color: #0b62d5;
+}
+
+   
+
+#areaFormula, #perimeterFormula, #variable{
+   
+    width: 12%;
+    height: 45px;
+    background-color: #455d7e;
+}
+
+#val,#area,#perimeter{
+    
+    width: 12%;
+    height: 45px;
+    background-color: #3188ff;
+}
+
+.start-again{
+    background-color: inherit;
+    color: white;
+    padding: 13px 32px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 2px solid white;
+}
