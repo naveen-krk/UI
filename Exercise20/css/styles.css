@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #000000;
+}
+/* start of header */
+.header{
+    font-family: 'IBM Plex Sans', sans-serif;
+    height:9vh;
+    width: 100%;
+    background-color:#041d2e;
+    position: fixed;
+    top: 0;
+}
+h1{
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+h1 span{
+    font-weight: 500;
+}
+/* start of buttons */
+.buttons{
+    display: flex;
+    width: 25%;
+    margin-left: 75%;
+    align-items: center;
+  justify-content: center;
+  height:9vh;
+  color: white;
+  font-size: 20px;
+  
+}
+.delete{
+    padding: 5px 40px;
+    height: 40px;
+    background:#a80001;
+    border-radius: 40px;
+    align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.new{
+    background-color: #b354b7;
+    padding: 5px 40px;
+    height: 40px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/* end of buttons */
+     /* end of header   */
+
+.left-side{
+    display: none;
+    position: fixed;
+    width: 65%;
+    height: 100vh;
+    background-color:#041d2e;;
+    left: 0;
+    opacity:0.6;  
+    cursor: pointer;
+}
+/* start of pop up messages */
+.confirm{
+    display: none;
+    float: left;
+    height: 18vh;
+    width: 25%;
+    margin: auto;
+    background-color: #a80001;
+    margin-top: 35vh;
+    padding: 8px;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+}
+.confirm-header{
+    background-color: #041d2e;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#closeConfirm{
+margin-left: 80%;
+color: gray;
+cursor: pointer;
+
+}
+.confirm h3{
+display: inline-block;
+font-weight: 300;
+}
+.confirm-message{
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.yes-close{
+    background-color: #b354b7;
+    padding: 8px 16px;
+    border-radius: 40px;
+    display: inline;
+   margin: 150px;
+   font-weight: 500;
+}
+/* end of pop up messages */
+/* start of addnotes */
+.add-notes{
+    display: none;
+    position: fixed;
+    width: 35%;
+    height: 100vh;
+    background-color:black;
+    right: 0;
+    opacity:1;  
+}
+/* start of form container  */
+.form-container{
+    width: 85%;
+    margin: auto;
+    padding: 7% 0;
+    height: 100vh;
+}
+.new-notes{
+    width: 100%;
+     background-color:#041d2e;
+    color: white;
+    display: flex;
+    justify-content:end;
+    font-size: 14px;
+}
+.new-notes h3{
+   margin-left: 20px;
+   margin-right: 73%;
+   padding: 15px 0;
+}
+.close{
+    color: #918e8e;
+    margin-right: 20px;
+    padding: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form{
+    display: none;
+}
+.form h4{
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    margin: 30px 0;
+}
+.form h5{
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    margin: 30px 0;
+    line-height: 30px;
+}
+.title{
+font-size: 28px;
+color: #918e8e;
+margin-top: 30px;
+font-weight: 300;
+cursor: pointer;
+}
+.content{
+font-size: 16px;
+color: #918e8e;
+font-weight: 300;
+margin-top: 30px;
+cursor: pointer;
+}
+input{
+    display: none;
+    width: 100%;
+    background-color: rgb(11, 11, 11);
+    border: none;
+    color: white;
+    margin: 30px 0;
+    padding: 30px 0;
+    font-size: 30px;
+}
+#tick{
+    display: none;
+    position: absolute;
+   top: 12px;
+   padding-left: 8px;
+   color: rgb(138, 131, 131);
+    transform: scale(2,2);
+}
+#content{
+    height: 50vh;
+}
+.bottom{
+    display: flex;
+    position: absolute;
+    top: 830px;
+}
+/* start of colors */
+.pink{
+    background-color: #ebccec ;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.white{
+    background-color:#fcfcfc ;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.orange{
+    background-color: #ffca72 ;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.green{
+    background-color: #e4ed91 ;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.peach{
+    background-color: #e9b4b4;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+/* end of colors */
+.add{
+    color: white;
+    margin-left: 100px;
+    background-color: #b354b7;
+    padding: 10px 40px;
+    height: 40px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+/* end of form container */
+
+/* end of addnotes */
+
+/* start of content-container */
+.data{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 91vh;
+    color: white;
+    margin-top: 9vh;
+    display: flex;
+       display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+.article{
+    height: 47%;
+    width: 22%;
+    margin: 20px;
+   color: #000000;
+   padding: 20px;
+   font-weight: 300;
+   font-size: 14px;
+   cursor: pointer;
+}
+.article-title{
+    font-size: 25px;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.article-content{
+    width: 100%;
+   
+}
+.time{
+    width: 100%;
+    margin-bottom: 12px;
+
+}
+/* end of .content-container */
+
+/* start of delete all */
+/* .delete-node{
+    display: none;
+    height: 18vh;
+    width: 25%;
+    margin: auto;
+    background-color: #a80001;
+    margin-top: 35vh;
+    padding: 8px;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+}
+.confirm-delete{
+    background-color: #041d2e;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#closedelete{
+margin-left: 80%;
+color: gray;
+cursor: pointer;
+
+}
+.delete-node h3{
+display: inline-block;
+font-weight: 300;
+}
+.confirm-delete{
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.yes-delete{
+    background-color: #b354b7;
+    padding: 8px 16px;
+    border-radius: 40px;
+    display: inline;
+   margin: 150px;
+   font-weight: 500;
+} */
+
+/* end of deleteall */
+.loadmore{
+    display: none;
+    width: 10%;
+    height: 10vh;
+    background-color: #b354b7;
+    padding: 5px 40px;
+    height: 40px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+.articleData{
+display: none;
+width: 50%;
+margin: auto;
+height: 91vh;
+margin-top: 9vh;
+color: white;
+}
+
+.delete-article{
+    display: none;
+    padding: 5px 40px;
+    height: 40px;
+    background:#a80001;
+    border-radius: 40px;
+    align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.edit-article{
+    display: none;
+    background-color: #b354b7;
+    padding: 5px 40px;
+    height: 40px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
