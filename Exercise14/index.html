@@ -8,18 +8,21 @@
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
+        <!-- start of header -->
         <header>
-            <div><img src="./images/Sirius_CDW_Cobranded.svg" alt="siriusLogo"/></div>
+            <div><img src="./images/sirius.png" alt="siriusLogo"/></div>
         </header>
+        <!-- end of header -->
+        <!-- start of section -->
         <section>
-            <form onsubmit="return formValidate();">
+            <!-- start of form -->
+            <form>
                 <h3>BILLING DETAILS</h3>
                 <div class="float-left">
                     <label for="firstName">First Name</label> <br />
                     <input type="text" name="firstName" id="first" />
                     <p id="firstName"></p>
                 </div>
-
                 <div class="float-right">
                     <label for="lastName">Last Name</label> <br />
                     <input type="text"  name="lastName" id="last"/>
@@ -39,7 +42,7 @@
                 <input type="text" name="pinCode" id="pincode"/> <br />
                 <p id="pinCode" class="not-float"></p>
 
-                <h3>PAYMENT DETAILS</h3>
+                <h3 class="payment-details">PAYMENT DETAILS</h3>
                 <label for="cardNumber">Card Number</label> <br />
                 <input type="text" name="cardNumber" id="card"/>
                 <p id="cardNumber" class="not-float"></p>
@@ -57,10 +60,12 @@
                 </div>
                 <div class="clear-fix"></div>
 
-                <input type="submit" value="COMPLETE PAYMENT">
+                <input id="submit" type="button" value="COMPLETE PAYMENT">
+                <!-- end of form -->
             </form>
         </section>
+        <!-- end of section -->
         <footer class="footer"></footer>
-        <script src="./js/form.js"> </script>
+        <script type="module" src="./js/form.js"> </script>
     </body>
 </html>
