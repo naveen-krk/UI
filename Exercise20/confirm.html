@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PocketNotes</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #041d2e;
+    opacity: 0.8;
+        }
+        .confirm{
+    height: 20vh;
+    width: 25%;
+    margin: auto;
+    background-color: black;
+    margin-top: 35vh;
+    padding: 14px;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+}
+.confirm-header{
+    background-color: #041d2e;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#closeConfirm{
+margin-left: 80%;
+color: gray;
+cursor: pointer;
+
+}
+.confirm h3{
+display: inline-block;
+font-weight: 300;
+}
+.confirm-message{
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.yes-close{
+    background-color: #b354b7;
+    padding: 8px 16px;
+    border-radius: 40px;
+    display: inline;
+   margin: 150px;
+   font-weight: 500;
+   cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="confirm">
+            <div class="confirm-header">
+            <h3>
+    CONFIRM
+            </h3>
+            <span id="closeConfirm">
+                X
+            </span>
+        </div>
+            <div class="confirm-message">
+    Seems like you are in the middle of the adding/editing content.Do you want to leave? 
+            </div>
+            <div class="yes-close">
+    YES,CLOSE
+            </div>
+            </div>
+
+        </div> -->
+    </div>
+</body>
+<script>
+document.getElementsByClassName("yes-close")[0]
+  .addEventListener("click", function () {
+    localStorage.clear();
+    location.reload();
+    window.open("index.html")
+  });
+  document.getElementById("closeConfirm")
+  .addEventListener("click", function () {
+    window.open("index.html")
+  });
+</script>
+</html>

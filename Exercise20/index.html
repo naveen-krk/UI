@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pocket notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- start of header  -->
+      <header class="header">
+        <h1>Pocket<span> Notes</span></h1>
+        <!-- start of buttons -->
+        <div class="buttons">
+          <div class="delete">DELETE ALL</div>
+          <div class="new" onclick="openNew()">NEW</div>
+          <div class="delete-article">DELETE </div>
+          <div class="edit-article">EDIT</div>
+        </div>
+        <!-- end of buttons -->
+      </header>
+      <!-- end of header  -->
+    </div>
+    <div class="data">
+    </div>
+    <div class="left-side">
+        
+    </div>
+    <div class="confirm">
+        <div class="confirm-header">
+        <h3>
+CONFIRM
+        </h3>
+        <span id="closeConfirm">
+            X
+        </span>
+    </div>
+        <div class="confirm-message">
+Seems like you are in the middle of the adding/editing content.Do you want to leave? 
+        </div>
+        <div class="yes-close">
+YES,CLOSE
+        </div>
+        <div class="confirm">
+        <div class="confirm-header">
+        <h3>
+CONFIRM
+        </h3>
+        <span id="closeConfirm">
+            X
+        </span>
+    </div>
+        <div class="confirm-message">
+Seems like you are in the middle of the adding/editing content.Do you want to leave? 
+        </div>
+        <div class="yes-close">
+YES,CLOSE
+        </div>
+    </div>
+    </div>
+    <!-- start of addnotes -->
+    <div class="add-notes">
+      <div class="form-container">
+        <div class="new-notes">
+          <h3>NEW NOTE</h3>
+          <div class="close">X</div>
+        </div>
+        <div class="notes-title">
+          <div class="title">Notes Title</div>
+          <div class="content">Add Content Here</div>
+          <form action="#" class="form">
+            
+            <input
+              type="text"
+              id="title"
+            />
+            <input
+              type="text"
+              id="content" />
+              <h4 class="input-form">Summer Time a Long-Short Story </h4>
+            <h5 class="input-form">There was once a hare who was friends with a tortoise. One day, he challenged the tortoise to a race. Seeing how slow the tortoise was going, the hare thought he’ll win this easily. So he took a nap while the tortoise kept on going. When the hare woke up, he saw that the tortoise was already at the finish line. Much to his chagrin, the tortoise won the race while he was busy sleeping.
+                There are actually a couple of moral lessons we can learn from this story. The hare teaches that overconfidence can sometimes ruin you. While the tortoise teaches us about the power of perseverance. Even if all the odds are stacked against you, never give up. Sometimes life is not about who’s the fastest or the strongest, it’s about who is the most consistent.
+                   </h4>
+          </form>
+        </div>
+        <div class="bottom" id="bottom">
+          <div class="pink"><i class="fa-solid fa-check"  id="tick"></i></div>
+          <div class="white"><i class="fa-solid fa-check"  id="tick"></i></div>
+          <div class="orange"><i class="fa-solid fa-check"  id="tick"></i></div>
+          <div class="green"><i class="fa-solid fa-check"  id="tick"></i></div>
+          <div class="peach"><i class="fa-solid fa-check"  id="tick"></i></div>
+          <div class="add">ADD</div>
+        </div>
+      </div>
+    </div>
+    <!-- end of addnotes -->
+  <!-- <div class="loadmore">-->
+
+    <div class="load">
+      LOADMORE
+    </div> 
+  </div>
+  <div class="articleData">
+    <div class="articletitle">
+
+    </div>
+    <div class="articletime">
+
+    </div>
+    <div class="articlecontent">
+
+    </div>
+  </div>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
